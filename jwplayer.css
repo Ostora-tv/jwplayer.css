@@ -1,6 +1,7 @@
+<style>
 html,
 body {
-    font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica, Arial, sans-serif";
+    font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
     overflow-x: hidden;
     overflow-y: hidden;
     outline: none;
@@ -219,6 +220,7 @@ h5.modal-title {
 }
 
 .jw-settings-close:hover .jw-svg-icon-close {
+    background-image: url('data:image/png;base64,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');
 }
 
 
@@ -321,39 +323,3 @@ h5.modal-title {
 
 
 /* Fim do CSS */
-</style>
-
-</head>
-<body>
-  <style type="text/css">*{margin:0;padding:0;outline:none;}#container{position:absolute;width:100%!important;height:100%!important;}*:focus{outline:none;}</style>
-	<div id="container"></div>
-</body>
-<script>
-jwplayer("container").setup({
-
-		    controls: "true",
-		    displaytitle: false,
-		    fullscreen: "true",
-		    primary: 'html5',
-		    stretching: "exactfit",
-		    autostart: false,
-		autoscreenrotation: "true",
-		androidhls: "true",
-             logo:{position:"top-right", 
-                    file:"https://i.imgur.com/cJ77XNp.png", 
-                        "margin": "5",
-                    link: ""},
-		    skin: {
-		    	name: 'ALOSTORA',
-		    },
-
-		    //sharing: {
-		    	//sites: ["reddit","facebook","twitter"]
-		    //},
-		     
-		    captions: {
-		        color: '#FFF',
-		         fontSize: 25,
-		         backgroundOpacity: 0,
-		         edgeStyle: 'raised' 
-		    },
